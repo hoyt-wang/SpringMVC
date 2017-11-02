@@ -9,6 +9,8 @@
     <title></title>
 </head>
 <body>
-    <h1>hello,springmvc</h1>
+    <h1>id--->${userId}</h1>
+    <h2>ID : ${id}</h2>
+    <h2>tagId : ${tagId}</h2>
 </body>
 </html>

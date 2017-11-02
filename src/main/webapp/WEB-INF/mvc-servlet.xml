@@ -13,6 +13,15 @@
     <!---->
     <mvc:annotation-driven/>
 
+    <!--文件上传解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSizePerFile" value="100000"/>
+    </bean>
+
+    <!--放行静态资源-->
+    <mvc:default-servlet-handler/>
+    <!--<mvc:resources location="/static/" mapping="/static/**"/>-->
+
     <!--视图解析器-->
     <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <!--让视图支持JSTL-->
